@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid'
 import { linksRepository } from '../repositories/links-repository'
 
 export class LinksController {
-    async shortenUrl(req: Request, res: Response) {
+    async registerUrl(req: Request, res: Response) {
         const { originalUrl } = req.body
 
         if(!originalUrl) {
